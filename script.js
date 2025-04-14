@@ -14,10 +14,18 @@ function order(productName) {
     { name: "Шины Mercedes Michelin X-ice 3", type: "шина", brand: "mercedes", price: 89200, img: "https://mosautoshina.ru/i/tyre/michelin-x-ice-3-500.webp" },
     { name: "Шины Mercedes WestLake ZuperAce SA-57", type: "шина", brand: "mercedes", price: 86030, img: "https://mosautoshina.ru/i/tyre/westlake-sa57-500.webp" },
     { name: "Шины Audi Continental AllSeasonContact ContiSeal", type: "шина", brand: "audi", price: 82900, img: "https://mosautoshina.ru/i/tyre/continental-allseasoncontact-contiseal-500.webp" },
-  
     { name: "Диски BMW RST R128 7.5x18/5x112 ET 51 Dia 66.6 BL", type: "диск", brand: "bmw", price: 89000, img: "https://mosautoshina.ru/i/wheel/rst-r128-bl-400.webp" },
+    { name: "Диски BMW Скад Мюнхен 8x18/5x112 ET 40 Dia 66.6 селена", type: "диск", brand: "bmw", price: 89000, img: "https://mosautoshina.ru/i/wheel/skad-munchen-selena-400.webp" },
+    { name: "Диски BMW Replay B209 8x18/5x112 ET 30 Dia 66.6 BKF", type: "диск", brand: "bmw", price: 89000, img: "https://mosautoshina.ru/i/wheel/replay-b209-bkf-400.webp" },
+    { name: "Диски BMW Mak Komet 8x18/5x112 ET 33 Dia 66.6 silver", type: "диск", brand: "bmw", price: 89000, img: "https://mosautoshina.ru/i/wheel/mak-komet-silver-400.webp" },
     { name: "Диски Mercedes Replay B221 8x18/5x112 ET 30 Dia 66.6 GMF", type: "диск", brand: "mercedes", price: 80000, img: "https://mosautoshina.ru/i/wheel/replay-b221-gmf-400.webp" },
+    { name: "Диски Mercedes RST R029 8.5x19/5x112 ET 32 Dia 66.6 HS", type: "диск", brand: "mercedes", price: 80000, img: "https://mosautoshina.ru/i/wheel/rst-r029-hs-400.webp" },
+    { name: "Диски Mercedes RPLC BM98 7.5x19/5x112 ET 32 Dia 66.6 BLK", type: "диск", brand: "mercedes", price: 80000, img: "https://mosautoshina.ru/i/wheel/rplc-bm98-blk-400.webp" },
+    { name: "Диски Mercedes LS FlowForming RC04 8.5x19/5x112 ET 32 Dia 66.6 MGMU", type: "диск", brand: "mercedes", price: 80000, img: "https://mosautoshina.ru/i/wheel/ls-flowforming-rc04-400.webp" },
     { name: "Диски Audi Khomen Wheels KHW1504 (Rapid) 6x15/5x100 ET 38 Dia 57.1 Black semi-matt", type: "диск", brand: "audi", price: 83000, img: "https://mosautoshina.ru/i/wheel/khomen-wheels-khw1504-rapid-black-semi-matt-400.webp" },
+    { name: "Диски Audi iFree Азур 6.5x16/5x112 ET 43 Dia 57.1 блэк джек", type: "диск", brand: "audi", price: 83000, img: "https://mosautoshina.ru/i/wheel/ifree-azur-blek-dzhek-400.webp" },
+    { name: "Диски Audi Replay VV27 6.5x16/5x112 ET 33 Dia 57.1 S", type: "диск", brand: "audi", price: 83000, img: "https://mosautoshina.ru/i/wheel/replay-vv27-s-400.webp" },
+    { name: "Диски Audi Carwel Лача 6.5x16/5x112 ET 42 Dia 57.1 AB", type: "диск", brand: "audi", price: 83000, img: "https://mosautoshina.ru/i/wheel/carwel-lacha-ab-400.webp" },
   ];
   
 
