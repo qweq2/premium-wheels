@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Premium Wheels</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Premium Wheels</h1>
+    <input type="text" id="searchInput" placeholder="Поиск товаров..." oninput="filterProducts()" />
+    <div class="filters">
+      <select id="typeFilter" onchange="filterProducts()">
+        <option value="">Все типы</option>
+        <option value="шина">Шины</option>
+        <option value="диск">Диски</option>
+      </select>
+      <select id="brandFilter" onchange="filterProducts()">
+        <option value="">Все бренды</option>
+        <option value="bmw">BMW</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+    </div>
+    <button onclick="toggleCart()">🛒 Корзина (<span id="cartCount">0</span>)</button>
+  </header>
+
+  <section id="catalog" class="products"></section>
+
+  <section id="order-form" style="display:none;">
+    <h3>Оформить заказ</h3>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Ваше имя" required />
+      <input type="tel" placeholder="Телефон" required />
+      <button type="submit">Подтвердить заказ</button>
+    </form>
+  </section>
+
+  <section id="cart" style="display:none;">
+    <h3>Корзина</h3>
+    <ul id="cartItems"></ul>
+    <p><strong>Итого: </strong><span id="cartTotal">0</span> ₽</p>
+    <button onclick="checkout()">Оформить заказ</button>
+  </section>
+
+  <footer style="">
+    <p style="font-size: 10px;">продаются полным комплектом 4шт.</p>
+    <p>© 2025 Premium Wheels</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
