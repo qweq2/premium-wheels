@@ -45,11 +45,6 @@ function renderProducts() {
     (brand ? p.brand === brand : true)
   );
 
-  if (filtered.length === 0) {
-    catalog.innerHTML = "<p>Товары не найдены</p>";
-    return;
-  }
-
   filtered.forEach(product => {
     const card = document.createElement("div");
     card.className = "product-card";
@@ -71,6 +66,7 @@ function addToCart(name) {
   const product = products.find(p => p.name === name);
   cart.push(product);
   updateCartCount();
+  renderCart();
 }
 
 function updateCartCount() {
@@ -119,9 +115,7 @@ function submitForm(event) {
   updateCartCount();
   renderCart();
   document.getElementById("order-form").style.display = "none"
-}
-function submitForm(event) {
-    event.preventDefault();
+  event.preventDefault();
   
     const name = document.querySelector('#order-form input[type="text"]').value;
     const phone = document.querySelector('#order-form input[type="tel"]').value;
@@ -129,7 +123,6 @@ function submitForm(event) {
     const message = `Новый заказ!\nИмя: ${name}\nТелефон: ${phone}\nТовары:\n` +
       cart.map(item => `${item.name} — ${item.price}₽`).join("\n");
   
-    // Замените на свой токен и ID чата
     const token = "7788979502:AAHrC-Hf04jCQYOxKHrv_Hb1cah0ttyNjHI";
     const chat_id = "1031391442";
   
@@ -138,15 +131,9 @@ function submitForm(event) {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ chat_id, text: message })
     })
-    .then(() => {
-      alert("Спасибо за заказ! Мы скоро с вами свяжемся.");
-      cart = [];
-      updateCartCount();
-      renderCart();
-      document.getElementById("order-form").style.display = "none";
-    })
+    
     .catch(err => {
       alert("Ошибка при отправке. Попробуйте ещё раз.");
       console.error(err);
     });
-  }
+}

@@ -16,7 +16,7 @@
       <p>Только оригинальная продукция!</p>
     </div>
     <div>
-      <h1>Premium Wheels</h1>
+      <marquee behavior="alternate" direction="right" scrollamount="1" style="width: 300px; "><h1>Premium Wheels</h1></marquee>
       <input type="text" id="searchInput" placeholder="Поиск товаров..." oninput="filterProducts()" />
       <div class="filters">
         <select id="typeFilter" onchange="filterProducts()">
@@ -29,8 +29,7 @@
           <option value="bmw">BMW</option>
           <option value="mercedes">Mercedes</option>
           <option value="audi">Audi</option>
-        </select>
-        
+        </select> 
       </div>
       <button onclick="toggleCart()">🛒 Корзина (<span id="cartCount">0</span>)</button>
     </div>
@@ -59,8 +58,20 @@
   </section>
 
   <footer style="">
+    <div>
+      <p>Контакты</p>
+      <ul >
+        <li> Телефон: +7 (999)-777 77 77</li>
+        <li>Email: prem_wheels2025@gmail.com</li>
+      </ul>
+    </div>
+    <div>
     <p style="font-size: 10px;">продаются полным комплектом 4шт.</p>
-    <p>© 2025 Premium Wheels</p>
+    <p>Premium Wheels</p>
+    </div>
+    <div>
+      <p style="justify-content: center; padding-top: 50px;">"Гарантий 1 года"</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

@@ -28,7 +28,7 @@ body {
     height: 100%;
   }
   header div{
-    flex-direction: row;
+    flex-direction: ;
     width: 250px;
   }
   .partners a{
@@ -118,6 +118,14 @@ body {
     text-align: center;
     padding: 10px;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  footer div{
+    display: flex;
+    flex-direction: column;
+    width: 320px;
   }
   @media (max-width: 768px) {
     header {
@@ -154,5 +162,10 @@ body {
   
     .partners {
       margin-top: 20px;
+    }
+  
+    marquee{
+      behavior: alternate;
+      direction: right;
     }
   }
