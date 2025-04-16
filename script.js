@@ -130,7 +130,7 @@ function submitForm(event) {
       cart.map(item => `${item.name} — ${item.price}₽`).join("\n");
   
     // Замените на свой токен и ID чата
-    const token = "8105837639:AAFHOUqkrxkauABwbAiEgaGbBknRyNadAqo";
+    const token = "7788979502:AAHrC-Hf04jCQYOxKHrv_Hb1cah0ttyNjHI";
     const chat_id = "1031391442";
   
     fetch(`https://api.telegram.org/bot${token}/sendMessage`, {

@@ -2,28 +2,42 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Premium Wheels</title>
   <link rel="stylesheet" href="style.css" />
+
 </head>
 <body>
   <header>
-    <h1>Premium Wheels</h1>
-    <input type="text" id="searchInput" placeholder="Поиск товаров..." oninput="filterProducts()" />
-    <div class="filters">
-      <select id="typeFilter" onchange="filterProducts()">
-        <option value="">Все типы</option>
-        <option value="шина">Шины</option>
-        <option value="диск">Диски</option>
-      </select>
-      <select id="brandFilter" onchange="filterProducts()">
-        <option value="">Все бренды</option>
-        <option value="bmw">BMW</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
+    <div class="info">
+      <p>Высококачественное оборудование!</p>
+      <p>Лучшие специалисты!</p>
+      <p>Гарантия качества!</p>
+      <p>Только оригинальная продукция!</p>
     </div>
-    <button onclick="toggleCart()">🛒 Корзина (<span id="cartCount">0</span>)</button>
+    <div>
+      <h1>Premium Wheels</h1>
+      <input type="text" id="searchInput" placeholder="Поиск товаров..." oninput="filterProducts()" />
+      <div class="filters">
+        <select id="typeFilter" onchange="filterProducts()">
+          <option value="">Все типы</option>
+          <option value="шина">Шины</option>
+          <option value="диск">Диски</option>
+        </select>
+        <select id="brandFilter" onchange="filterProducts()">
+          <option value="">Все бренды</option>
+          <option value="bmw">BMW</option>
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </select>
+        
+      </div>
+      <button onclick="toggleCart()">🛒 Корзина (<span id="cartCount">0</span>)</button>
+    </div>
+    
+    <div class="partners">
+      <a href="https://vados3151.github.io/Site/">Партнер по продаже элитных автомобилей</a>
+    </div>
   </header>
 
   <section id="catalog" class="products"></section>
